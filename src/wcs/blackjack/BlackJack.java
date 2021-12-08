@@ -1,13 +1,12 @@
 package wcs.blackjack;
 
+import wcs.blackjack.core.Game;
+
 public class BlackJack {
 
 	public static void main(String[] args) {
-		// player settings
-		
-		// creating game
-		
-		// launching game
+		Game game = new Game();
+		game.begin();
 
 	}
 
