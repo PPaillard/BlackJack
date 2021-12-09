@@ -5,8 +5,8 @@ import java.util.Collections;
 
 public class Deck {
 
-	String[] colors = { "Clubs", "Diamonds", "Hearts", "Spades" };
-	String[] ranks = { "Ace", "2", "3", "4", "5", "6", "7", "8", "9", "10", "Jack", "Queen", "King" };
+	String[] colors = { "Coeur", "Carreau", "Trefle", "Pique" };
+	String[] ranks = { "As", "2", "3", "4", "5", "6", "7", "8", "9", "10", "Valet", "Dame", "Roi" };
 	private ArrayList<Card> cards;
 
 	public Deck() {
@@ -30,10 +30,10 @@ public class Deck {
 	private int getPoints(String rank) {
 		int points = 0;
 		switch (rank) {
-		case "Jack", "Queen", "King":
+		case "Valet", "Dame", "Roi":
 			points = 10;
 			break;
-		case "Ace":
+		case "As":
 			points = 11;
 			break;
 		default:

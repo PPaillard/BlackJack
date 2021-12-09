@@ -26,12 +26,19 @@ public class Player {
 		return this.points;
 	}
 	
+	public ArrayList<Card> getCards() {
+		return this.cards;
+	}
+	
 	public String getName() {
 		return this.name;
 	}
 	
-	public String showCardAndPoints() {
-		// TODO : finir la fonction d'affichage
-		return "TODO";
+	public void showCardAndPoints() {
+		System.out.printf("%s points. Les cartes du joueur %s sont : %n",this.getPoints(), this.name);
+		for(Card card : this.getCards()) {
+			System.out.printf("%s de %s%n", card.getValue(), card.getColor());
+		}
+		
 	}
 }
